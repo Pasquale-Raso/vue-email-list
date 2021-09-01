@@ -17,7 +17,11 @@
   </head>
   <body>
     <div id="app">
-      <div class="container text-center mt-4" v-for="(mail, index) in mails">
+      <div
+        class="container text-center mt-4"
+        v-for="(mail, index ) in mails"
+        v-if="mails.length == 10"
+      >
         <div>({{ index }})</div>
         <strong>{{ mail }}</strong>
       </div>
