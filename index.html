@@ -16,7 +16,12 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <div id="app">{{ mail }}</div>
+    <div id="app">
+      <div class="container text-center mt-4" v-for="(mail, index) in mails">
+        <div>({{ index }})</div>
+        <strong>{{ mail }}</strong>
+      </div>
+    </div>
     <script src="./js/javascript.js"></script>
   </body>
 </html>
